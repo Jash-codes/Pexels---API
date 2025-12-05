@@ -1,0 +1,37 @@
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #111827; 
+}
+::-webkit-scrollbar-thumb {
+    background: #2dd4bf; 
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #14b8a6; 
+}
+
+/* Image Card Hover Zoom */
+.img-card {
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.img-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Gradient Overlay on Image Cards */
+.overlay {
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+}
+
+/* Loader Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.gallery-item-anim {
+    animation: fadeIn 0.6s ease-out forwards;
+}
